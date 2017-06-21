@@ -1,0 +1,218 @@
+.clearfix {
+	zoom:1;
+}
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+}
+ul{
+  padding: 0px;
+}
+.app-content{
+  margin-left:172px;
+  height: 100%;
+	margin-right: 0px;
+}
+.tabname {
+  padding-left: 30px;
+  ul{
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0;
+    li{
+      float: left;
+      padding:13px 18px;
+      font-weight: bold;
+      background: #fff;
+      font-size: 16px;
+    }
+  }
+}
+.main{
+  width: 100%;
+  background:#fff;
+  padding: 20px 45px;
+}
+input,textarea{
+	padding-left: 5px;
+}
+.adChoise ul{
+  margin-bottom: 30px;
+  padding: 0px;
+  li{
+    font-size: 14px;
+		float:left;
+		margin-right: 30px;
+    input{
+      margin-right: 5px;
+    }
+    label{
+      font-weight: 400;
+    }
+  }
+}
+.sucai {
+  .txt{
+    font-size: 14px;
+    margin-bottom: 15px;
+    color:#666;
+  }
+  .jsTxt{
+    width:463px;
+    height:329px;
+  }
+}
+.J_saveSC{
+  background: #075ed3;
+  color:#fff;
+  font-size: 14px;
+  padding: 0px 18px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.info_main table td{
+	padding: 5px 0px;
+}
+.info_main table td.r{
+	padding-left: 10px;
+}
+.info_main input[type='radio']{
+	margin-right: 5px;
+}
+.info_main label{
+	font-weight: 400px
+}
+.AdHref{
+	width: 250px;
+	height: 29px;
+}
+.infoIpt{
+	width: 250px;
+	height: 29px;
+}
+.bgImg{
+	margin-top: 30px;
+	img{
+		width: 180px;
+	}
+}
+.BannerImg{
+	margin-top: 30px;
+	img{
+		width: 320px;
+	}
+}
+.bombAdImg{
+	margin-top: 30px;
+	img{
+		width: 230px;
+	}
+}
+.funcImg{
+	margin-top: 30px;
+	img{
+		width:320px;
+	}
+}
+.fullAdImg{
+	margin-top: 30px;
+	img{
+		width: 180px;
+	}
+}
+.jumpAdImg{
+	margin-top: 30px;
+	img{
+		width: 180px;
+	}
+}
+.infoImgbig,.infoImgsmall{
+	margin-top: 30px;
+	img{
+		max-width: 320px;
+	}
+}
+/*投放规则*/
+.adinfo {
+  li{
+    display: inline-block;
+		padding-bottom: 10px;
+  }
+}
+.putRule{
+    margin-top: 20px;
+}
+.adinfo{
+  .adMaster,.adName{
+    width: 249px;
+    height: 29px;
+    margin-right: 30px;
+  }
+}
+.putRule td{
+  height:40px;
+}
+.putAreaLi{
+  float:left;
+  margin-top: 5px;
+  label{
+    margin-right: 15px;
+    font-weight: 400;
+		line-height: 26px;
+		font-size: 14px;
+    color: #075ed3;
+    font-weight: 600;
+		cursor: pointer;
+  }
+  input{
+    vertical-align:sub;
+  }
+}
+.putRule .Wdate{
+  width: 93px;
+  padding: 0px;
+  height: 29px;
+  display: inline-block;
+}
+.putNumSelect,.sortsSelect{
+  width: 93px;
+  height:29px;
+  padding: 0px;
+}
+.putNumSelect{
+	display: inline-block;
+	margin-right: 20px;
+}
+.J_submit{
+  @extend .J_saveSC;
+  padding:0px;
+  width: 125px;
+  text-align: center;
+}
+.J_back{
+  color:#075ed3;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 25px;
+}
+.grayBtn{
+  background:#a0a3a6;
+  width: 125px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+  color:#fff;
+  cursor: pointer;
+}
+.material{
+	margin-top: 10px;
+}

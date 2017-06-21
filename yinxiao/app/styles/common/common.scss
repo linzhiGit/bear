@@ -1,0 +1,375 @@
+$base-seze-color:#58666e !default;
+$body-bg: #f6f7fb !default;
+$aside-bg: #075ed3 !default;
+html, body{
+  width: 100%;
+  height: 100%;
+  font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+
+*:focus {
+  outline: 0 !important;
+}
+li{
+  list-style: none;
+}
+body{
+  overflow-x: hidden;
+  color:$base-seze-color;
+}
+.nav-sub{
+  display: none;
+}
+.app{
+  position: relative;
+  padding-top: 50px;
+  height: auto;
+  min-height: 100%;
+
+}
+.app:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: inherit;
+  background-color: $body-bg;
+  border: inherit;
+  content: "";
+}
+.app-content-top{
+  margin-left: 170px;
+  height: 50px;
+  background: #404143;
+  margin-right: 0px;
+  color: #fff;
+  padding: 0px 10px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+.app-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1025;
+  border-radius: 0;
+}
+.backBefore{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.navbar {
+  margin: 0;
+  border-width: 0;
+  border-radius: 0;
+}
+.box-shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+.bg-white-only{
+  background-color:#fff;
+}
+.navbar-collapse{
+  margin-left: 170px;
+}
+.signout{
+  float: right;
+  line-height: 50px;
+  color: #aeaeae;
+}
+.logout {
+  float: right;
+  border-left: 1px solid #eee;
+  width: 50px;
+  background: url(/adsys/images/gold_icon.png) left top  no-repeat;
+  margin-right: -20px;
+  height: 50px;
+  margin-left: 10px;
+}
+.app-aside{
+  float: left;
+  width: 170px;
+}
+.app-aside li a{
+  cursor: pointer;
+}
+.aside-wrap {
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1000;
+  width: 170px;
+  overflow: hidden;
+}
+.app-aside:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 90;
+  width: inherit;
+  background-color: inherit;
+  border: inherit;
+  content: "";
+}
+
+.bg-black {
+  color: #7793a7;
+  background-color: $aside-bg;
+}
+
+.pg-dislabel{
+  pointer-events: none;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: .65;
+}
+
+.bg-black a {
+  color: #96abbb;
+}
+
+.bg-black a:hover {
+  color: #ffffff;
+}
+
+.bg-black a.list-group-item:hover,
+.bg-black a.list-group-item:focus {
+  background-color: inherit;
+}
+
+.bg-black .nav > li:hover > a,
+.bg-black .nav > li:focus > a,
+.bg-black .nav > li.active > a {
+  color: #ffffff;
+  background-color: #0f56bb;
+}
+.nav{
+  width: 168px;
+}
+.nav li {
+  position: relative;
+  display: block;
+  padding: 0px
+}
+.nav li a {
+  position: relative;
+  display: block;
+  padding: 12px 20px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.nav li a > i {
+  position: relative;
+  float: left;
+  width: 40px;
+  margin: -10px -10px;
+  margin-right: 5px;
+  overflow: hidden;
+  line-height: 40px;
+  text-align: center;
+}
+.bg-black .nav > li > a {
+  color: #fff;
+}
+.bg-black .nav > li > a:hover,
+.bg-black .nav > li > a:focus {
+  background-color: #0f56bb;
+}
+.bg-black .nav-sub > li > a:hover,
+.bg-black .nav-sub > li > a:focus {
+  background-color: #075ed3;
+}
+.nav li li a {
+  padding-left: 70px;
+}
+
+.nav li a > i:before {
+  position: relative;
+  z-index: 2;
+}
+.pull-left{
+  float:left;
+  width: 50px;
+  height: 18px;
+  background-image: url(/adsys/images/icon.png);
+  vertical-align: middle;
+}
+
+.icon-arrow-left{
+  background: url(/adsys/images/dateleft.png) no-repeat;
+  width:20px;
+  height: 18px;
+  display: inline-block;
+}
+.icon-arrow-right{
+  background: url(/adsys/images/dateRight.png) no-repeat;
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+}
+.icon-manage{
+  background-position: left -57px;
+}
+.icon-count{
+  height: 24px;
+  background-position: left -99px;
+}
+.icon-put{
+  height: 24px;
+  background: url(/adsys/images/put_icon.png) no-repeat center top;
+}
+/*插件分页*/
+.tcdPageCode_box {
+  position: relative;
+  height: 63px;
+  text-align: center;
+}
+
+.tcdPageCode_main {
+  padding: 18px 0px;
+  display: inline-block;
+}
+
+.allPageCode {
+  text-align: left;
+  color: #ccc;
+  display: inline-block;
+}
+.allPageCode a {
+  display: inline-block;
+  color: #666666;
+  background:#fff;
+  border:1px solid #dcdcdc;
+  line-height: 24px;
+  padding: 0px 8px;
+  height:24px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.allPageCode span.current {
+  display: inline-block;
+  line-height: 24px;
+  padding: 0px 8px;
+  height:24px;
+  margin-left: 5px;
+  color: #fff;
+  background-color: #1566d4;
+  border: 1px solid #dcdcdc;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 13px;
+}
+
+.allPageCode span.disabled {
+  display: inline-block;
+  vertical-align: middle;
+  background: #e4e4e5;
+  color:#58666e;
+}
+.allPageSize {
+  height: 26px;
+  line-height: 26px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: 1px solid #dfdddd;
+}
+.nextPage,
+.prevPage {
+  width:50px;
+  color: #333 !important;
+  padding: 0px !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+.tcdPageCode_main .prevPage-img,
+.tcdPageCode_main .nextPage-img {
+  width: 64px;
+  height: 24px;
+  line-height: 24px;
+  color: #666666;
+  background:#fff;
+  border:1px solid #dcdcdc;
+  text-align: center;
+  font-size: 13px;
+  margin: 0 5px;
+}
+
+.nextPage {
+  margin-left: 10px;
+}
+
+.tcdPageCode_box .input_text {
+  border: #f2f2f2 1px solid;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  margin: -4px 5px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.input_btn {
+  display: inline-block;
+  border:1px solid #f1f1f1;
+  color:#858585;
+  font-size:14px;
+  width: 60px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.loading {
+  width:200px;
+  height:35px;
+  text-align:center;
+  line-height:35px;
+  background:#fff;
+  border-radius:2px;
+  border:1px solid #ccc;
+  position:fixed;top:50%;
+  left:50%;
+  margin-top:-17.5px;
+  margin-left:-100px;
+}
+
+.find_btn {
+  cursor: pointer;
+}
+
+.btn-addon {
+  color: #ffffff !important;
+}
+.btn-primary {
+  color: #fff;
+  border-color: #0f56bb;
+  border-radius: 0px;
+  background-color: #075ed3;
+  position: relative;
+}
+.Imglocation{
+  display: inline-block;
+  vertical-align: top;
+  margin-left:85px;
+}
+.editContent{
+  display: inline-block;
+}
+.error{
+  font-size: 14px;
+  color:red;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.layui-layer-loading1{
+  margin:  0 auto;
+}

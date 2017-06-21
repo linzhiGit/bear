@@ -1,0 +1,41 @@
+.delive{
+  margin-top: 10px;
+}
+.tit{
+  font-size: 16px;
+  padding: 0 0 0 20px;
+  font-weight: bold;
+  margin-top:0;
+}
+.delive table{
+  width: 100%;
+  tr{
+    border: 1px solid #e5e5e5;
+    text-indent: 25px;
+    &:nth-child(odd){
+      background: #fff;
+    }
+    &:nth-child(even){
+      background: #f6f7fb;
+    }
+  }
+  th{
+    background: #404143;
+    color: #fff;
+    font-weight: normal;
+    padding: 6px 0;
+    line-height: 22px;
+  }
+  td{
+    padding: 6px 0;
+    line-height: 22px;
+  }
+}
+.action{
+  a{
+    color:#075ed3;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
